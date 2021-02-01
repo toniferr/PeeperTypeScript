@@ -1,5 +1,12 @@
+//Interface
+interface CamisetaBase {
+    setColor(color);
+    getColor();
+}
+
+
 //Clase (molde del objeto)
-export class Camiseta {
+class Camiseta implements CamisetaBase {
 
     //Propiedades (caracteristicas)
     private color: string;
@@ -28,5 +35,6 @@ export class Camiseta {
 
 }
 
-
+var camiseta = new Camiseta("fdas", "fdas", "fdas", "fdas", 12);
+console.log(camiseta);
 
